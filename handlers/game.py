@@ -1,8 +1,3 @@
-from .misc import *
-from .processing import *
-from .npc import *
-from .box import *
-from .sprite_input import *
 import os
 import sys
 import subprocess
@@ -14,6 +9,12 @@ except ImportError:
 	subprocess.check_call([sys.executable, "-m", "pip", "install", 'pygame'])
 finally:
 	import pygame
+
+from .misc import *
+from .processing import *
+from .npc import *
+from .box import *
+from .sprite_input import *
 
 
 class Game():
